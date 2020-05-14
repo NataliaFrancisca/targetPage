@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap');
+
+body,html {
+	width: 100%;
+	height: 100%;
+	font-family: 'Slabo 27px', serif;
+	background-color: black;
+	position: relative;
+}
+
+h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	text-shadow: 1px -5px rgba(0,255,127,0.2);
+	color: white;
+}
+/*MENU*/
+.menu{
+	width: 100%;
+	display: block;
+}
+
+.navegacao{
+	width: 100%;
+	margin-top: 0px;
+	font-size: 1.5rem;
+	background: transparent;
+	padding: 0px 0px 5px 0px;
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	color: white !important;  
+}
+
+/* titulo */
+.paginaInicial{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin: auto;
+	background-color: black;
+	flex-direction: column;
+}
+
+.titulo-principal{
+	width: 50%;
+	height: auto;
+	display: flex;
+	align-self: center;
+	margin-top: 8%;
+	animation: zoomIn ; 
+    animation-duration: 1s ; 
+    flex-direction: column;  
+}
+
+.titulo-principal h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 9rem;
+	text-align: center;
+	text-shadow: 1px -5px white;
+	color: rgb(0,200,127);
+
+}
+.subtitulo-principal{
+	width: 100%;
+	font-size: 1.5rem;
+	display: none;
+	color: white;
+	text-align: center;
+	animation: zoomIn ; 
+    animation-duration: 1s ; 
+    text-shadow: none;
+}
+
+/*sobre nos e imagem */
+.sobreNos{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+}
+
+.imagem{
+	width: 50%;
+	height: 100%;
+}
+
+.img-sobre{
+	width: 80%;
+	height: 80%;
+	margin: 10%;
+	background-size: cover;
+	box-shadow: 0 0 1rem white;
+	max-width: 100%;
+}
+
+.conjunto-texto{
+	width: 80%;
+	height: 80%;
+	margin: 10%;
+}
+
+.texto-sobre{
+	width: 50%;
+	height: 100%;
+}
+
+.texto-sobre p{
+	font-size: 1.7rem;
+	text-align: justify;
+	color: white;
+	margin: 5%;
+}
+
+/*segunda parte sobre nos com missão,visão e valores */
+.segundaParte-sobreNos{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	margin-top: 10%;
+	background-color: white;
+	justify-content: space-around;
+}
+
+.objetos{
+	width: 100%;
+	height: 70%;
+	margin-top: -5%;
+	display: inline-flex;	
+}
+
+.objetos-sobre{
+	width: 100%;
+	height: 100%;
+}
+
+.card{
+	width: 33%;
+	height: 90%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
+	box-shadow: 0 0 0.5rem rgba(0,255,127,0.7);	
+}
+
+.card:nth-child(2n+0){
+	height: 100%;
+	margin-top: -3%;
+}
+
+.segundaParte-titulo{
+	font-family: serif;
+	font-size: 4rem;
+	text-align: center;
+	margin: 5%;
+	color: black;	
+	text-shadow: none;
+}
+
+
+/*serviços*/
+
+.servicos{
+	width: 100%;
+	height: auto;
+	display: flex;
+	color: black;
+	margin-top: 2%;
+	flex-direction: column;
+}
+
+.lista-servicos{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.lista-servicos ul{
+	margin: 2rem;
+	width: 25%;	
+}
+
+.bordaCard{
+	background: transparent !important;
+	border: solid 1px rgba(0,255,127,0.7) ;
+	color:white;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+/*CONTATO */
+
+.contato{
+	width: 100%;
+	height: 80%;
+	flex-direction: column;
+	display: flex;
+	color: white;
+}
+
+.informacoes-contatos{
+	font-family: serif;
+	display: inline-flex;
+	font-size: 1rem;
+	justify-content: space-around; 
+	margin: 2rem;
+	color: white;
+}
+
+.contatos{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	text-align: center;
+}
+
+.contatos .divider{
+	margin-top: 5%;
+	margin-bottom: -5%;
+}
+	
+.btn{
+	margin-bottom: 1rem;
+}
+
+/*animações e adicionais */
+
+.zoom, .nav-link {
+	overflow: hidden;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.zoom:hover, .nav-link:hover  {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.wrapper{
+	padding-bottom: 50px;
+}
+
+.divider{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before{
+	content: "";
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(0,255,127), transparent);
+}
+
+
+.js .anime {
+	opacity: 0;
+	transform: translate3D(-50px, 0px, 0px);
+}
+
+.js .anime-init {
+	opacity: 1;
+	transform: translate3D(0px, 0px, 0px);
+	transition: .8s all ease;
+}
